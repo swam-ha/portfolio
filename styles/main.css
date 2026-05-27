@@ -4,6 +4,7 @@ html, body {
     font-family: 'VT323', monospace;
     letter-spacing: 1px;
     color: #33ff33; /* Classic amber (#ffb000) or green (#33ff33) */
+    font-size: 16px;
   
 
     background-color: #011142;
@@ -139,13 +140,21 @@ html, body {
 }
 
 #contacts {
+
     border-top: #0231BD solid 1px;
     margin: auto;
+    margin-top: 10vh;
     width: max-content;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.copybox {
+    display: inline-flex;
+    align-items: center;
 }
 
 #contacts input[type="text"] {
@@ -153,6 +162,7 @@ html, body {
     border: none;
     color: inherit;
     border-bottom: #0231BD solid 1px;
+
 }
 
 .btn {
@@ -172,15 +182,19 @@ html, body {
 
 
  @media (max-width: 600px) {
+    html, body {
+        letter-spacing: 0;
+    }
+
     #motto img {
         width: 20vw;
     }
 
 
     #aboutme {
-        width: 100%;
+        width: 95%;
         margin: auto;
-        font-size: inherit;
+        font-size: 0.9em;
     }
 
     #aboutme #info {
@@ -193,7 +207,14 @@ html, body {
         float: none;
         width: auto;
         margin-right: none;
-        margin-bottom: none;
+        border-bottom: #0231BD solid 1px;
+        padding-bottom: 20%;
+        margin-bottom: 10vh;
+
+    }
+
+    #aboutme #paragraph {
+        line-height: 2;
     }
     /*section-of-the-page main-div sub-div */
     #aboutme #info #abt, #techstack {
