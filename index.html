@@ -29,7 +29,7 @@
             
             <a href="#main" style="border: none;">Home</a>
             <a href="#aboutme">About Me</a>
-            <a href="">Contacts</a>
+            <a href="#contacts">Contacts</a>
         </div>
         <div class="marquee-container">
             <div class="marquee-content">
@@ -49,10 +49,61 @@
 
     <div id="aboutme">
         <h1>About Me</h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora atque nemo perferendis minima ut eligendi? A maxime corporis dolorum modi vitae eius. Dicta, blanditiis? Deleniti, consectetur blanditiis. Nesciunt, placeat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis ipsa quae sed recusandae vitae ex quo, rem, soluta nesciunt, numquam dicta voluptatum. Aliquam eum impedit distinctio ipsam a soluta!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aspernatur, optio sit recusandae dolore voluptas vel minima nostrum, ipsa ipsum doloremque exercitationem. In est minus libero repellat corrupti id! Distinctio!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas tempora aliquid consequuntur excepturi illo impedit doloribus necessitatibus consequatur eaque. Natus nostrum sunt, porro consequuntur dolorum quia accusantium temporibus deleniti!
+        <div id="info">
+            <div id="abt">
+                <div>Name</div>
+                <div>: Swam Htet Aung</div>
+
+                <div>Date of Birth</div>
+                <div>: November 7, 2006</div>
+
+                <div>Nationality</div>
+                <div>: Myanmar</div> 
+            </div>
+
+            <h3>🛠️ My tech stack</h3>
+            <div id="techstack">
+                <div>Language</div>
+                <div>: Python, Java, Javscript, C++, C, MySQL, HTML/CSS</div>
+
+                <div>Specializations</div>
+                <div>: API Integration, Telegram Bots, Discord Bots, Web Development, Security Testing</div>
+            </div>
+        </div>
+        <div id="paragraph">
+            <p>
+                I’m a self-taught programmer and I’ve been building, breaking, and fixing code <u>since 2018</u>. Whether I'm writing tools in C, handling user data in Java, or cleaning up messy databases, I care about one thing: making sure it runs fast and it doesn't break. I focus on building automated apps, bots, linking APIs, and finding web security flaws. For me, it's not about fancy titles or paper credentials; it's just about building things that work, breaking them to see how they tick, and understanding what's actually happening under the hood.
+            <br><br>
+            In short, my personal philosophy regarding software is
+                <i>
+                 "Software shouldn't just work—it should be intentional. I believe in understanding the underlying systems completely, rather than relying on abstract layers."
+                </i>
+            </p>
+        </div>
     </div>
+
+
+    <div id="contacts">
+        <h1>Contacts</h1>
+        <div id="contacts-grid">
+            <div>
+                <p>Email @</p>
+            </div>
+            <div class="copybox">
+                <input type="text" value="swamha0857@gmail.com" id="email" aria-label="Copy code snippet" readonly>
+                <button class="btn" onclick="copy('email')"></button>
+            </div>
+
+            <div>
+                <p>Github @</p>
+            </div>
+            <div class="copybox">
+                <input type="text" value="https://github.com/swam-ha" id="github" aria-label="Copy code snippet" readonly>
+                <button class="btn" onclick="copy('github')"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
