@@ -143,6 +143,9 @@ html, body {
     margin: auto;
     width: max-content;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contacts input[type="text"] {
